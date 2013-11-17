@@ -1,5 +1,114 @@
 @import compass
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800)
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,600,300,700,800|Roboto+Condensed:300)
 @import fontawesome/font-awesome
 @import reset
+
+$darkbg: #2f282c
+$orange: #ecb26a
+$yellow: #fed268
+$red: #8c1a18
+$light: #e2e2e1
+$green: #93954d
+
+body
+	border: 1em $orange solid
+	background: $darkbg
+	font-family: Open Sans
+	text-transform: uppercase
+	font-size: 16px
+	@media screen and (max-width: 800px)
+		font-size: 14px
+	@media screen and (max-width: 600px)
+		font-size: 12px
+// Global 
+.light
+	font-weight: 300
+
+%textshadow
+	+text-shadow(2px 2px 0 $green )
+
+// Layout
+.page-wrap
+	+box-sizing(border-box)
+	max-width: 50em
+	margin: 0 auto
+	position: relative
+	padding: 0 1em
+	min-height: 100vh
+
+header
+	max-width: 40em
+	margin: 0 auto
+	padding: 1em 0
+
+.titlebox
+	text-align: center
+.maintitle
+	@extend %textshadow
+	margin: 0
+	font-size: 5em
+	+clearfix
+	color: $yellow
+	font-family: Oswald
+	div
+		float: left
+.smalls
+	font-size: .5em
+.middles
+	font-size: 1em
+.bigs
+	font-size: 2em
+.huges
+	font-size: 3em
+
+.discription
+	margin: 0
+	color: $green
+
+.bumper
+	+box-sizing(border-box)
+	font-size: 1.3em
+	float: right
+	display: inline-block
+	text-align: center
+	padding: .5em
+	margin-top: -1em
+	background: $red
+	color: $light
+	font-weight: bold
+	@media screen and (max-width: 600px)
+		float: none
+		width: 100%
+		br
+			display: none
+.site-features
+	padding: 1em 0
+	text-align: center
+
+
+.feature
+	display: inline-block
+	max-width: 10em
+	background: $green
+	padding: 1em
+.credits
+	max-width: 80%
+	margin: 0 auto
+	font-family: Roboto Condensed
+	font-size: .8em
+	text-align: center
+	font-weight: 300
+	color: $light
+	.big
+		display: inline
+		font-size: 2em
+.date
+	@extend %textshadow
+	text-align: center
+
+	font-size: 4em
+	font-weight: 900
+
+	color: $yellow
+
 
