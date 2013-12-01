@@ -3,9 +3,21 @@
 @import reset
 @import url(http://fonts.googleapis.com/css?family=Tangerine:700|Roboto+Slab:400,700,300,100)
 
+
+// Variables
+$backgroundColor: #f7f6f0
+$accentColor: #943062
+$pieColor: #d0b871
+$textColor: #151515
+
+
+// Layout
 body
+	font-size: 16px
 	font-family: Roboto Slab
 
+	background: $backgroundColor
+	color: $textColor
 
 .page-wrap
 	max-width: 60em
@@ -15,7 +27,10 @@ body
 header
 	text-align: center
 	h1
-		font-size: 4em
+		margin-bottom: 0
+		font-size: 7em
 		font-family: Tangerine
-
-
+		color: $accentColor
+	p
+		font-size: 1.5em
+		font-weight: lighter

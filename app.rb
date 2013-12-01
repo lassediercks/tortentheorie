@@ -1,8 +1,8 @@
 require 'sinatra'  
 require 'haml'  
 require 'compass'  
+# require 'translator' 
 # require 'coffee-script'
-# require 'csspool'
 
 
 configure do
